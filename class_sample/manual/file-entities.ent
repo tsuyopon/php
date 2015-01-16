@@ -1,0 +1,6 @@
+<!ENTITY reference.hellopecl.reference SYSTEM './hellopecl/reference.xml'>
+<!ENTITY reference.hellopecl.constants SYSTEM './hellopecl/constants.xml'>
+<!ENTITY reference.hellopecl.ini SYSTEM './hellopecl/ini.xml'>
+<!ENTITY reference.hellopecl.configure SYSTEM './hellopecl/configure.xml'>
+<!ENTITY reference.hellopecl.functions.hello-pecl SYSTEM './hellopecl/functions/hello-pecl.xml'>
+<!ENTITY reference.hellopecl.functions SYSTEM './functions.xml'>

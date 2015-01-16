@@ -1,0 +1,8 @@
+// $ Id: $
+// vim:ft=javascript
+
+ARG_ENABLE('hellopecl' , 'The unknown extension', 'no');
+if (PHP_HELLOPECL == "yes") {
+  EXTENSION("hellopecl", "hellopecl.c");
+  AC_DEFINE("HAVE_HELLOPECL", 1, "hellopecl support");
+}
