@@ -41,11 +41,6 @@ README:          自動生成されるファイル
 config.m4:       UNIX用のビルドシステムファイル
 config.w32:      Windows用のビルドシステムファイル
 hellopecl.c:     エクステンション本体
-hellopecl.dsp: 
-hellopecl.xml:
-manual:
-package.xml:
-package2.xml:
 php_hellopecl.h: エクステンションヘッダファイル
 
 
