@@ -29,9 +29,23 @@ extension=hellopecl.so
 	phpinfo();
 ```
 
-
 #動作確認
 php-5.4.17-2.fc17.x86_64
 php-devel-5.4.17-2.fc17.x86_64
+
+
+# ファイル説明
+CREDITS:         配布時に添付する場合のためのファイル
+EXPERIMENTAL:    配布時に添付する場合のためのファイル
+README:          自動生成されるファイル
+config.m4:       UNIX用のビルドシステムファイル
+config.w32:      Windows用のビルドシステムファイル
+hellopecl.c:     エクステンション本体
+hellopecl.dsp: 
+hellopecl.xml:
+manual:
+package.xml:
+package2.xml:
+php_hellopecl.h: エクステンションヘッダファイル
 
 
