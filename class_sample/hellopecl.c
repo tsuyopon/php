@@ -14,7 +14,7 @@
 static zend_class_entry *myclass_ce;
 
 /* {{{ hellopecl_functions[] */
-function_entry hellopecl_functions[] = {
+zend_function_entry hellopecl_functions[] = {
 	PHP_ME(Azarashi, hello_pecl , NULL, 0)     // メソッド追加
 	PHP_ME(Azarashi, addData    , NULL, 0)     // メソッド追加
 	PHP_ME(Azarashi, counter_get, NULL, 0)     // メソッド追加
