@@ -1,6 +1,5 @@
 **/.deps
 **/.libs/
-**/Makefile
 **/Makefile.fragments
 **/Makefile.global
 **/Makefile.objects
@@ -26,3 +25,5 @@
 **/mkinstalldirs
 **/modules/
 **/run-tests.php
+**/vendor
+**/composer.phar
