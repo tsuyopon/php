@@ -1,6 +1,7 @@
 <?php
 /*
  * PHPのマジック定数について
+ * https://www.php.net/manual/ja/language.constants.magic.php
  * cf. https://pisuke-code.com/php-magic-constants/
  */
 
@@ -42,7 +43,7 @@ new Hoge();
 /*
 
 __construct
-18
+19
 /var/www/html/Debug/Basic
 /var/www/html/Debug/Basic/macro1.php
 hello\Hoge
