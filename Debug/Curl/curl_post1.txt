@@ -1,0 +1,339 @@
+[21-Jun-2022 02:31:03 Asia/Tokyo] RequestUrl: https://httpbin.org/post?a1=A1&b1=B1
+[21-Jun-2022 02:31:03 Asia/Tokyo] RequestHeaders: POST /post?a1=A1&b1=B1 HTTP/2
+Host: httpbin.org
+Accept: */*
+ZZZ-AAAAA: aaa
+ZZZ-BBBBB: bbb
+Content-Length: 23
+Content-Type: application/x-www-form-urlencoded
+
+
+[21-Jun-2022 02:31:03 Asia/Tokyo] RequestBody: test1=a&test2=b&test3=c
+[21-Jun-2022 02:31:03 Asia/Tokyo] StatusCode: 200
+[21-Jun-2022 02:31:03 Asia/Tokyo] Errno:0, Errmsg if exsits:
+[21-Jun-2022 02:31:03 Asia/Tokyo] Response(Header+Body):HTTP/2 200 
+date: Mon, 20 Jun 2022 17:31:02 GMT
+content-type: application/json
+content-length: 528
+server: gunicorn/19.9.0
+access-control-allow-origin: *
+access-control-allow-credentials: true
+
+{
+  "args": {
+    "a1": "A1", 
+    "b1": "B1"
+  }, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "test1": "a", 
+    "test2": "b", 
+    "test3": "c"
+  }, 
+  "headers": {
+    "Accept": "*/*", 
+    "Content-Length": "23", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org", 
+    "X-Amzn-Trace-Id": "Root=1-62b0aed6-0712cfee4b9448b800e02b60", 
+    "Zzz-Aaaaa": "aaa", 
+    "Zzz-Bbbbb": "bbb"
+  }, 
+  "json": null, 
+  "origin": "60.101.238.212", 
+  "url": "https://httpbin.org/post?a1=A1&b1=B1"
+}
+
+[21-Jun-2022 02:31:03 Asia/Tokyo] Response(Header):HTTP/2 200 
+date: Mon, 20 Jun 2022 17:31:02 GMT
+content-type: application/json
+content-length: 528
+server: gunicorn/19.9.0
+access-control-allow-origin: *
+access-control-allow-credentials: true
+
+
+[21-Jun-2022 02:31:03 Asia/Tokyo] Response(Body):{
+  "args": {
+    "a1": "A1", 
+    "b1": "B1"
+  }, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "test1": "a", 
+    "test2": "b", 
+    "test3": "c"
+  }, 
+  "headers": {
+    "Accept": "*/*", 
+    "Content-Length": "23", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org", 
+    "X-Amzn-Trace-Id": "Root=1-62b0aed6-0712cfee4b9448b800e02b60", 
+    "Zzz-Aaaaa": "aaa", 
+    "Zzz-Bbbbb": "bbb"
+  }, 
+  "json": null, 
+  "origin": "60.101.238.212", 
+  "url": "https://httpbin.org/post?a1=A1&b1=B1"
+}
+
+[21-Jun-2022 02:31:03 Asia/Tokyo] CurlInfo:array (
+  'url' => 'https://httpbin.org/post?a1=A1&b1=B1',
+  'content_type' => 'application/json',
+  'http_code' => 200,
+  'header_size' => 202,
+  'request_size' => 166,
+  'filetime' => -1,
+  'ssl_verify_result' => 0,
+  'redirect_count' => 0,
+  'total_time' => 0.715841,
+  'namelookup_time' => 0.005891,
+  'connect_time' => 0.196159,
+  'pretransfer_time' => 0.552611,
+  'size_upload' => 23.0,
+  'size_download' => 528.0,
+  'speed_download' => 738.0,
+  'speed_upload' => 32.0,
+  'download_content_length' => 528.0,
+  'upload_content_length' => 23.0,
+  'starttransfer_time' => 0.552852,
+  'redirect_time' => 0.0,
+  'redirect_url' => '',
+  'primary_ip' => '34.227.213.82',
+  'certinfo' => 
+  array (
+    0 => 
+    array (
+      'Subject' => 'CN = httpbin.org',
+      'Issuer' => 'C = US, O = Amazon, OU = Server CA 1B, CN = Amazon',
+      'Version' => '2',
+      'Serial Number' => '0158f30ad59d62af209f15ee4fc2bb33',
+      'Public Key Algorithm' => '    Signature Algorithm: sha256WithRSAEncryption
+sha256WithRSAEncryption',
+      'X509v3 Authority Key Identifier' => 'keyid:59:A4:66:06:52:A0:7B:95:92:3C:A3:94:07:27:96:74:5B:F9:3D:D0',
+      'X509v3 Subject Key Identifier' => 'CF:07:84:B8:03:48:AC:C9:AC:DB:11:65:0A:7D:29:FF:D6:97:4B:B3',
+      'X509v3 Subject Alternative Name' => 'DNS:httpbin.org,DNS:*.httpbin.org',
+      'X509v3 Key Usage' => 'DigitalSignature,KeyEncipherment',
+      'X509v3 Extended Key Usage' => 'TLSWebServerAuthentication,TLSWebClientAuthentication',
+      'X509v3 CRL Distribution Points' => ', FullName:, URI:http://crl.sca1b.amazontrust.com/sca1b-1.crl',
+      'X509v3 Certificate Policies' => 'Policy:2.23.140.1.2.1',
+      'Authority Information Access' => 'OCSP-URI:http://ocsp.sca1b.amazontrust.com, CAIssuers-URI:http://crt.sca1b.amazontrust.com/sca1b.crt',
+      'X509v3 Basic Constraints' => 'CA:FALSE',
+      'CT Precertificate SCTs' => 'SignedCertificateTimestamp:, Version:v1(0x0), LogID:29:79:BE:F0:9E:39:39:21:F0:56:73:9F:63:A5:77:E5:, BE:57:7D:9C:60:0A:F8:F9:4D:5D:26:5C:25:5D:C7:84, Timestamp:Nov2103:03:40.4692021GMT, Extensions:none, Signature:ecdsa-with-SHA256, 30:45:02:20:5D:D8:F1:CC:14:99:9F:5C:99:84:9C:94:, DA:D2:60:E8:58:0D:E0:B3:49:30:18:1F:0A:48:86:9E:, A8:00:72:81:02:21:00:FF:C9:CA:C0:DD:06:DD:2C:14:, 89:2D:FF:35:DC:E5:56:EB:9A:92:BE:1A:EE:8B:E2:03:, 33:7B:CD:78:92:9B:37, SignedCertificateTimestamp:, Version:v1(0x0), LogID:51:A',
+      'Start date' => 'Nov 21 00:00:00 2021 GMT',
+      'Expire date' => 'Dec 19 23:59:59 2022 GMT',
+      'RSA Public Key' => '84E427A5ECEBC00D2F1F37F8ECF6BE3BCE1F5AE7BFE7AD93A90AD58ABB5FFB77EC190777326C2721DFA4B00190BD6378335FE149E95825BDB8EA916A181EEDF9923EBE30581F8FC9E82885B0AC33BACAA4485EB77ED421F0EC7439AB01F47BD194E3C74FF0790EC921F0736227ED6513149911A3BDCEC43DC0EEB66EC187B0C5FF50FDD5401C972D5059BB40CC2AC976846694372F7E2E066FE3F895A560CF435FA48697F13FDC751FE98C9545818183EAEE31B971E4DB96D22817FB1440F351FB22880529EE8884971473BD1C49E4E6987AD7485699540A22B0803EC01430CF66EBE8836FAE0D8EB323595FDB926DFAAFE141333F4BF077C4078871970C20E5',
+      'rsa(n)' => '84E427A5ECEBC00D2F1F37F8ECF6BE3BCE1F5AE7BFE7AD93A90AD58ABB5FFB77EC190777326C2721DFA4B00190BD6378335FE149E95825BDB8EA916A181EEDF9923EBE30581F8FC9E82885B0AC33BACAA4485EB77ED421F0EC7439AB01F47BD194E3C74FF0790EC921F0736227ED6513149911A3BDCEC43DC0EEB66EC187B0C5FF50FDD5401C972D5059BB40CC2AC976846694372F7E2E066FE3F895A560CF435FA48697F13FDC751FE98C9545818183EAEE31B971E4DB96D22817FB1440F351FB22880529EE8884971473BD1C49E4E6987AD7485699540A22B0803EC01430CF66EBE8836FAE0D8EB323595FDB926DFAAFE141333F4BF077C4078871970C20E5',
+      'rsa(e)' => '10001',
+      'Signature' => '2f:64:1d:d3:7d:3c:06:41:7b:6a:1c:94:60:99:31:92:b7:eb:e1:6c:b2:ac:ee:d2:5b:f4:ec:36:94:a6:c6:a3:c5:f8:3f:d0:a9:07:01:b7:cb:4f:1d:68:35:a0:d1:1c:51:88:a7:97:9a:ad:03:89:32:1e:aa:40:96:0c:d8:97:4e:05:52:94:a1:90:d0:e3:73:07:75:1a:29:20:98:d3:08:85:21:b1:dc:41:da:41:ec:87:be:b2:88:80:24:5e:4c:ad:5f:3c:fc:43:bc:55:36:6a:8f:67:9c:47:e2:43:43:a8:b2:c4:55:0b:a1:1a:26:c4:3e:fc:21:27:4e:2a:f4:04:43:e3:59:18:d6:d8:2f:e0:f5:83:87:47:23:fd:3c:ee:11:ff:9f:0a:3b:2f:29:74:96:70:5a:43:b2:18:ac:a5:65:e9:ac:2f:2e:ac:47:c8:77:50:4d:0a:5b:44:da:c0:cc:06:3b:eb:23:59:4d:9e:07:fb:8e:27:a6:1c:68:04:b4:a2:0d:52:ec:da:cb:0e:a4:f7:1d:45:92:7f:cd:60:ee:a9:4d:78:2d:e1:36:02:3c:7c:cc:45:2c:f4:e4:86:7f:3e:bf:6d:b4:48:98:a9:8b:a8:a0:9e:42:51:54:5a:02:d5:a4:c5:a2:55:cc:ab:fa:0c:a9:1a:94:1c:',
+      'Cert' => '-----BEGIN CERTIFICATE-----
+MIIF3DCCBMSgAwIBAgIQAVjzCtWdYq8gnxXuT8K7MzANBgkqhkiG9w0BAQsFADBG
+MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRUwEwYDVQQLEwxTZXJ2ZXIg
+Q0EgMUIxDzANBgNVBAMTBkFtYXpvbjAeFw0yMTExMjEwMDAwMDBaFw0yMjEyMTky
+MzU5NTlaMBYxFDASBgNVBAMTC2h0dHBiaW4ub3JnMIIBIjANBgkqhkiG9w0BAQEF
+AAOCAQ8AMIIBCgKCAQEAhOQnpezrwA0vHzf47Pa+O84fWue/562TqQrVirtf+3fs
+GQd3MmwnId+ksAGQvWN4M1/hSelYJb246pFqGB7t+ZI+vjBYH4/J6CiFsKwzusqk
+SF63ftQh8Ox0OasB9HvRlOPHT/B5Dskh8HNiJ+1lExSZEaO9zsQ9wO62bsGHsMX/
+UP3VQByXLVBZu0DMKsl2hGaUNy9+LgZv4/iVpWDPQ1+khpfxP9x1H+mMlUWBgYPq
+7jG5ceTbltIoF/sUQPNR+yKIBSnuiISXFHO9HEnk5ph610hWmVQKIrCAPsAUMM9m
+6+iDb64NjrMjWV/bkm36r+FBMz9L8HfEB4hxlwwg5QIDAQABo4IC9DCCAvAwHwYD
+VR0jBBgwFoAUWaRmBlKge5WSPKOUByeWdFv5PdAwHQYDVR0OBBYEFM8HhLgDSKzJ
+rNsRZQp9Kf/Wl0uzMCUGA1UdEQQeMByCC2h0dHBiaW4ub3Jngg0qLmh0dHBiaW4u
+b3JnMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUH
+AwIwPQYDVR0fBDYwNDAyoDCgLoYsaHR0cDovL2NybC5zY2ExYi5hbWF6b250cnVz
+dC5jb20vc2NhMWItMS5jcmwwEwYDVR0gBAwwCjAIBgZngQwBAgEwdQYIKwYBBQUH
+AQEEaTBnMC0GCCsGAQUFBzABhiFodHRwOi8vb2NzcC5zY2ExYi5hbWF6b250cnVz
+dC5jb20wNgYIKwYBBQUHMAKGKmh0dHA6Ly9jcnQuc2NhMWIuYW1hem9udHJ1c3Qu
+Y29tL3NjYTFiLmNydDAMBgNVHRMBAf8EAjAAMIIBfQYKKwYBBAHWeQIEAgSCAW0E
+ggFpAWcAdgApeb7wnjk5IfBWc59jpXflvld9nGAK+PlNXSZcJV3HhAAAAX1Acwi1
+AAAEAwBHMEUCIF3Y8cwUmZ9cmYSclNrSYOhYDeCzSTAYHwpIhp6oAHKBAiEA/8nK
+wN0G3SwUiS3/NdzlVuuakr4a7oviAzN7zXiSmzcAdgBRo7D1/QF5nFZtuDd4jwyk
+eswbJ8v3nohCmg3+1IsF5QAAAX1AcwjJAAAEAwBHMEUCIH4pZ7551jQOJ/lV20sD
+KNCWOLdt+cS2pjUIFEpI8nwlAiEAj2hxpivIPtX9tReEcJCaAuC5Gh90mZz9lWQy
+usID0VQAdQDfpV6raIJPH2yt7rhfTj5a6s2iEqRqXo47EsAgRFwqcwAAAX1Acwii
+AAAEAwBGMEQCIEyeaMOsy5LSsKkIod2CfBML3J/+CwjvJekdMBI4QYI2AiAYKdpD
+ptDftXG7GSOz8SgpqRtUoWIHs1woSj7uwEJwuzANBgkqhkiG9w0BAQsFAAOCAQEA
+L2Qd0308BkF7ahyUYJkxkrfr4WyyrO7SW/TsNpSmxqPF+D/QqQcBt8tPHWg1oNEc
+UYinl5qtA4kyHqpAlgzYl04FUpShkNDjcwd1GikgmNMIhSGx3EHaQeyHvrKIgCRe
+TK1fPPxDvFU2ao9nnEfiQ0OossRVC6EaJsQ+/CEnTir0BEPjWRjW2C/g9YOHRyP9
+PO4R/58KOy8pdJZwWkOyGKylZemsLy6sR8h3UE0KW0TawMwGO+sjWU2eB/uOJ6Yc
+aAS0og1S7NrLDqT3HUWSf81g7qlNeC3hNgI8fMxFLPTkhn8+v220SJipi6ignkJR
+VFoC1aTFolXMq/oMqRqUHA==
+-----END CERTIFICATE-----
+',
+    ),
+    1 => 
+    array (
+      'Subject' => 'C = US, O = Amazon, OU = Server CA 1B, CN = Amazon',
+      'Issuer' => 'C = US, O = Amazon, CN = Amazon Root CA 1',
+      'Version' => '2',
+      'Serial Number' => '067f94578587e8ac77deb253325bbc998b560d',
+      'Public Key Algorithm' => '    Signature Algorithm: sha256WithRSAEncryption
+sha256WithRSAEncryption',
+      'X509v3 Basic Constraints' => 'CA:TRUE,pathlen:0',
+      'X509v3 Key Usage' => 'DigitalSignature,CertificateSign,CRLSign',
+      'X509v3 Subject Key Identifier' => '59:A4:66:06:52:A0:7B:95:92:3C:A3:94:07:27:96:74:5B:F9:3D:D0',
+      'X509v3 Authority Key Identifier' => 'keyid:84:18:CC:85:34:EC:BC:0C:94:94:2E:08:59:9C:C7:B2:10:4E:0A:08',
+      'Authority Information Access' => 'OCSP-URI:http://ocsp.rootca1.amazontrust.com, CAIssuers-URI:http://crt.rootca1.amazontrust.com/rootca1.cer',
+      'X509v3 CRL Distribution Points' => ', FullName:, URI:http://crl.rootca1.amazontrust.com/rootca1.crl',
+      'X509v3 Certificate Policies' => 'Policy:2.23.140.1.2.1',
+      'Start date' => 'Oct 22 00:00:00 2015 GMT',
+      'Expire date' => 'Oct 19 00:00:00 2025 GMT',
+      'RSA Public Key' => 'C24E1667DDCEBC6AC8375AEC3A30B01DE6D112E8122848CCE829C1B96E53D5A3EB03391ACC7787F601B9D970CCCF6B8DE3E3037186996DCBA6942A4E13D6A7BD04EC0A163C0AEB39B1C4B558A3B6C75625EC3E527AA8E3291607B96E50CFFB5F31F81DBA034A628903AE3E47F20F2791E3142085F8FAE98A35F55F9E994DE76B37EFA4503E44ECFA5A8566079C7E176A55F3178A351EEEE9ACC3754E58557D536B0A6B9B1442D7E5AC0189B3EAA3FECFC02B0C84C2D85315CB67F0D088CA3AD11773F55F9AD4C5721E7E01F19830632AAAF27A2DC5E2021A86E5323E0EBD11B4CF3C93EF1750109E43C2062AE00D68BED3888B4A658C4AD4C32E4C9B55F486E5',
+      'rsa(n)' => 'C24E1667DDCEBC6AC8375AEC3A30B01DE6D112E8122848CCE829C1B96E53D5A3EB03391ACC7787F601B9D970CCCF6B8DE3E3037186996DCBA6942A4E13D6A7BD04EC0A163C0AEB39B1C4B558A3B6C75625EC3E527AA8E3291607B96E50CFFB5F31F81DBA034A628903AE3E47F20F2791E3142085F8FAE98A35F55F9E994DE76B37EFA4503E44ECFA5A8566079C7E176A55F3178A351EEEE9ACC3754E58557D536B0A6B9B1442D7E5AC0189B3EAA3FECFC02B0C84C2D85315CB67F0D088CA3AD11773F55F9AD4C5721E7E01F19830632AAAF27A2DC5E2021A86E5323E0EBD11B4CF3C93EF1750109E43C2062AE00D68BED3888B4A658C4AD4C32E4C9B55F486E5',
+      'rsa(e)' => '10001',
+      'Signature' => '85:92:be:35:bb:79:cf:a3:81:42:1c:e4:e3:63:73:53:39:52:35:e7:d1:ad:fd:ae:99:8a:ac:89:12:2f:bb:e7:6f:9a:d5:4e:72:ea:20:30:61:f9:97:b2:cd:a5:27:02:45:a8:ca:76:3e:98:4a:83:9e:b6:e6:45:e0:f2:43:f6:08:de:6d:e8:6e:db:31:07:13:f0:2f:31:0d:93:6d:61:37:7b:58:f0:fc:51:98:91:28:02:4f:05:76:b7:d3:f0:1b:c2:e6:5e:d0:66:85:11:0f:2e:81:c6:10:81:29:fe:20:60:48:f3:f2:f0:84:13:53:65:35:15:11:6b:82:51:40:55:57:5f:18:b5:b0:22:3e:ad:f2:5e:a3:01:e3:c3:b3:f9:cb:41:5a:e6:52:91:bb:e4:36:87:4f:2d:a9:a4:07:68:35:ba:94:72:cd:0e:ea:0e:7d:57:f2:79:fc:37:c5:7b:60:9e:b2:eb:c0:2d:90:77:0d:49:10:27:a5:38:ad:c4:12:a3:b4:a3:c8:48:b3:15:0b:1e:e2:e2:19:dc:c4:76:52:c8:bc:8a:41:78:70:d9:6d:97:b3:4a:8b:78:2d:5e:b4:0f:a3:4c:60:ca:e1:47:cb:78:2d:12:17:b1:52:8b:ca:39:2c:bd:b5:2f:c2:33:02:96:ab:da:94:7f:',
+      'Cert' => '-----BEGIN CERTIFICATE-----
+MIIESTCCAzGgAwIBAgITBn+UV4WH6Kx33rJTMlu8mYtWDTANBgkqhkiG9w0BAQsF
+ADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6
+b24gUm9vdCBDQSAxMB4XDTE1MTAyMjAwMDAwMFoXDTI1MTAxOTAwMDAwMFowRjEL
+MAkGA1UEBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEVMBMGA1UECxMMU2VydmVyIENB
+IDFCMQ8wDQYDVQQDEwZBbWF6b24wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+AoIBAQDCThZn3c68asg3Wuw6MLAd5tES6BIoSMzoKcG5blPVo+sDORrMd4f2AbnZ
+cMzPa43j4wNxhplty6aUKk4T1qe9BOwKFjwK6zmxxLVYo7bHViXsPlJ6qOMpFge5
+blDP+18x+B26A0piiQOuPkfyDyeR4xQghfj66Yo19V+emU3nazfvpFA+ROz6WoVm
+B5x+F2pV8xeKNR7u6azDdU5YVX1TawprmxRC1+WsAYmz6qP+z8ArDITC2FMVy2fw
+0IjKOtEXc/VfmtTFch5+AfGYMGMqqvJ6LcXiAhqG5TI+Dr0RtM88k+8XUBCeQ8IG
+KuANaL7TiItKZYxK1MMuTJtV9IblAgMBAAGjggE7MIIBNzASBgNVHRMBAf8ECDAG
+AQH/AgEAMA4GA1UdDwEB/wQEAwIBhjAdBgNVHQ4EFgQUWaRmBlKge5WSPKOUByeW
+dFv5PdAwHwYDVR0jBBgwFoAUhBjMhTTsvAyUlC4IWZzHshBOCggwewYIKwYBBQUH
+AQEEbzBtMC8GCCsGAQUFBzABhiNodHRwOi8vb2NzcC5yb290Y2ExLmFtYXpvbnRy
+dXN0LmNvbTA6BggrBgEFBQcwAoYuaHR0cDovL2NydC5yb290Y2ExLmFtYXpvbnRy
+dXN0LmNvbS9yb290Y2ExLmNlcjA/BgNVHR8EODA2MDSgMqAwhi5odHRwOi8vY3Js
+LnJvb3RjYTEuYW1hem9udHJ1c3QuY29tL3Jvb3RjYTEuY3JsMBMGA1UdIAQMMAow
+CAYGZ4EMAQIBMA0GCSqGSIb3DQEBCwUAA4IBAQCFkr41u3nPo4FCHOTjY3NTOVI1
+59Gt/a6ZiqyJEi+752+a1U5y6iAwYfmXss2lJwJFqMp2PphKg5625kXg8kP2CN5t
+6G7bMQcT8C8xDZNtYTd7WPD8UZiRKAJPBXa30/AbwuZe0GaFEQ8ugcYQgSn+IGBI
+8/LwhBNTZTUVEWuCUUBVV18YtbAiPq3yXqMB48Oz+ctBWuZSkbvkNodPLamkB2g1
+upRyzQ7qDn1X8nn8N8V7YJ6y68AtkHcNSRAnpTitxBKjtKPISLMVCx7i4hncxHZS
+yLyKQXhw2W2Xs0qLeC1etA+jTGDK4UfLeC0SF7FSi8o5LL21L8IzApar2pR/
+-----END CERTIFICATE-----
+',
+    ),
+    2 => 
+    array (
+      'Subject' => 'C = US, O = Amazon, CN = Amazon Root CA 1',
+      'Issuer' => 'C = US, ST = Arizona, L = Scottsdale, O = "Starfield Technologies, Inc.", CN = Starfield Services Root Certificate Authority - G2',
+      'Version' => '2',
+      'Serial Number' => '067f944a2a27cdf3fac2ae2b01f908eeb9c4c6',
+      'Public Key Algorithm' => '    Signature Algorithm: sha256WithRSAEncryption
+sha256WithRSAEncryption',
+      'X509v3 Basic Constraints' => 'CA:TRUE',
+      'X509v3 Key Usage' => 'DigitalSignature,CertificateSign,CRLSign',
+      'X509v3 Subject Key Identifier' => '84:18:CC:85:34:EC:BC:0C:94:94:2E:08:59:9C:C7:B2:10:4E:0A:08',
+      'X509v3 Authority Key Identifier' => 'keyid:9C:5F:00:DF:AA:01:D7:30:2B:38:88:A2:B8:6D:4A:9C:F2:11:91:83',
+      'Authority Information Access' => 'OCSP-URI:http://ocsp.rootg2.amazontrust.com, CAIssuers-URI:http://crt.rootg2.amazontrust.com/rootg2.cer',
+      'X509v3 CRL Distribution Points' => ', FullName:, URI:http://crl.rootg2.amazontrust.com/rootg2.crl',
+      'X509v3 Certificate Policies' => 'Policy:X509v3AnyPolicy',
+      'Start date' => 'May 25 12:00:00 2015 GMT',
+      'Expire date' => 'Dec 31 01:00:00 2037 GMT',
+      'RSA Public Key' => 'B2788071CA78D5E371AF478050747D6ED8D78876F49968F7582160F97484012FAC022D86D3A0437A4EB2A4D036BA01BE8DDB48C80717364CF4EE8823C73EEB37F5B519F84968B0DED7B976381D619EA4FE8236A5E54A56E445E1F9FDB416FA74DA9C9B35392FFAB02050066C7AD080B2A6F9AFEC47198F503807DCA2873958F8BAD5A9F948673096EE94785E6F89A351C0308666A14566BA54EBA3C391F948DCFFD1E8302D7D2D747035D78824F79EC4596EBB738717F2324628B843FAB71DAACAB4F29F240E2D4BF7715C5E69FFEA9502CB388AAE50386FDBFB2D621BC5C71E54E177E067C80F9C8723D63F40207F2080C4804C3E3B24268E04AE6C9AC8AA0D',
+      'rsa(n)' => 'B2788071CA78D5E371AF478050747D6ED8D78876F49968F7582160F97484012FAC022D86D3A0437A4EB2A4D036BA01BE8DDB48C80717364CF4EE8823C73EEB37F5B519F84968B0DED7B976381D619EA4FE8236A5E54A56E445E1F9FDB416FA74DA9C9B35392FFAB02050066C7AD080B2A6F9AFEC47198F503807DCA2873958F8BAD5A9F948673096EE94785E6F89A351C0308666A14566BA54EBA3C391F948DCFFD1E8302D7D2D747035D78824F79EC4596EBB738717F2324628B843FAB71DAACAB4F29F240E2D4BF7715C5E69FFEA9502CB388AAE50386FDBFB2D621BC5C71E54E177E067C80F9C8723D63F40207F2080C4804C3E3B24268E04AE6C9AC8AA0D',
+      'rsa(e)' => '10001',
+      'Signature' => '62:37:42:5c:bc:10:b5:3e:8b:2c:e9:0c:9b:6c:45:e2:07:00:7a:f9:c5:58:0b:b9:08:8c:3e:ed:b3:25:3c:b5:6f:50:e4:cd:35:6a:a7:93:34:96:32:21:a9:48:44:ab:9c:ed:3d:b4:aa:73:6d:e4:7f:16:80:89:6c:cf:28:03:18:83:47:79:a3:10:7e:30:5b:ac:3b:b0:60:e0:77:d4:08:a6:e1:1d:7c:5e:c0:bb:f9:9a:7b:22:9d:a7:00:09:7e:ac:46:17:83:dc:9c:26:57:99:30:39:62:96:8f:ed:da:de:aa:c5:cc:1b:3e:ca:43:68:6c:57:16:bc:d5:0e:20:2e:fe:ff:c2:6a:5d:2e:a0:4a:6d:14:58:87:94:e6:39:31:5f:7c:73:cb:90:88:6a:84:11:96:27:a6:ed:d9:81:46:a6:7e:a3:72:00:0a:52:3e:83:88:07:63:77:89:69:17:0f:39:85:d2:ab:08:45:4d:d0:51:3a:fd:5d:5d:37:64:4c:7e:30:b2:55:24:42:9d:36:b0:5d:9c:17:81:61:f1:ca:f9:10:02:24:ab:eb:0d:74:91:8d:7b:45:29:50:39:88:b2:a6:89:35:25:1e:14:6a:47:23:31:2f:5c:9a:fa:ad:9a:0e:62:51:a4:2a:a9:c4:f9:34:9d:21:18:',
+      'Cert' => '-----BEGIN CERTIFICATE-----
+MIIEkjCCA3qgAwIBAgITBn+USionzfP6wq4rAfkI7rnExjANBgkqhkiG9w0BAQsF
+ADCBmDELMAkGA1UEBhMCVVMxEDAOBgNVBAgTB0FyaXpvbmExEzARBgNVBAcTClNj
+b3R0c2RhbGUxJTAjBgNVBAoTHFN0YXJmaWVsZCBUZWNobm9sb2dpZXMsIEluYy4x
+OzA5BgNVBAMTMlN0YXJmaWVsZCBTZXJ2aWNlcyBSb290IENlcnRpZmljYXRlIEF1
+dGhvcml0eSAtIEcyMB4XDTE1MDUyNTEyMDAwMFoXDTM3MTIzMTAxMDAwMFowOTEL
+MAkGA1UEBhMCVVMxDzANBgNVBAoTBkFtYXpvbjEZMBcGA1UEAxMQQW1hem9uIFJv
+b3QgQ0EgMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALJ4gHHKeNXj
+ca9HgFB0fW7Y14h29Jlo91ghYPl0hAEvrAIthtOgQ3pOsqTQNroBvo3bSMgHFzZM
+9O6II8c+6zf1tRn4SWiw3te5djgdYZ6k/oI2peVKVuRF4fn9tBb6dNqcmzU5L/qw
+IFAGbHrQgLKm+a/sRxmPUDgH3KKHOVj4utWp+UhnMJbulHheb4mjUcAwhmahRWa6
+VOujw5H5SNz/0egwLX0tdHA114gk957EWW67c4cX8jJGKLhD+rcdqsq08p8kDi1L
+93FcXmn/6pUCyziKrlA4b9v7LWIbxcceVOF34GfID5yHI9Y/QCB/IIDEgEw+OyQm
+jgSubJrIqg0CAwEAAaOCATEwggEtMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/
+BAQDAgGGMB0GA1UdDgQWBBSEGMyFNOy8DJSULghZnMeyEE4KCDAfBgNVHSMEGDAW
+gBScXwDfqgHXMCs4iKK4bUqc8hGRgzB4BggrBgEFBQcBAQRsMGowLgYIKwYBBQUH
+MAGGImh0dHA6Ly9vY3NwLnJvb3RnMi5hbWF6b250cnVzdC5jb20wOAYIKwYBBQUH
+MAKGLGh0dHA6Ly9jcnQucm9vdGcyLmFtYXpvbnRydXN0LmNvbS9yb290ZzIuY2Vy
+MD0GA1UdHwQ2MDQwMqAwoC6GLGh0dHA6Ly9jcmwucm9vdGcyLmFtYXpvbnRydXN0
+LmNvbS9yb290ZzIuY3JsMBEGA1UdIAQKMAgwBgYEVR0gADANBgkqhkiG9w0BAQsF
+AAOCAQEAYjdCXLwQtT6LLOkMm2xF4gcAevnFWAu5CIw+7bMlPLVvUOTNNWqnkzSW
+MiGpSESrnO09tKpzbeR/FoCJbM8oAxiDR3mjEH4wW6w7sGDgd9QIpuEdfF7Au/ma
+eyKdpwAJfqxGF4PcnCZXmTA5YpaP7dreqsXMGz7KQ2hsVxa81Q4gLv7/wmpdLqBK
+bRRYh5TmOTFffHPLkIhqhBGWJ6bt2YFGpn6jcgAKUj6DiAdjd4lpFw85hdKrCEVN
+0FE6/V1dN2RMfjCyVSRCnTawXZwXgWHxyvkQAiSr6w10kY17RSlQOYiypok1JR4U
+akcjMS9cmvqtmg5iUaQqqcT5NJ0hGA==
+-----END CERTIFICATE-----
+',
+    ),
+    3 => 
+    array (
+      'Subject' => 'C = US, ST = Arizona, L = Scottsdale, O = "Starfield Technologies, Inc.", CN = Starfield Services Root Certificate Authority - G2',
+      'Issuer' => 'C = US, O = "Starfield Technologies, Inc.", OU = Starfield Class 2 Certification Authority',
+      'Version' => '2',
+      'Serial Number' => 'a70e4a4c3482b77f',
+      'Public Key Algorithm' => '    Signature Algorithm: sha256WithRSAEncryption
+sha256WithRSAEncryption',
+      'X509v3 Basic Constraints' => 'CA:TRUE',
+      'X509v3 Key Usage' => 'DigitalSignature,CertificateSign,CRLSign',
+      'X509v3 Subject Key Identifier' => '9C:5F:00:DF:AA:01:D7:30:2B:38:88:A2:B8:6D:4A:9C:F2:11:91:83',
+      'X509v3 Authority Key Identifier' => 'keyid:BF:5F:B7:D1:CE:DD:1F:86:F4:5B:55:AC:DC:D7:10:C2:0E:A9:88:E7',
+      'Authority Information Access' => 'OCSP-URI:http://o.ss2.us/, CAIssuers-URI:http://x.ss2.us/x.cer',
+      'X509v3 CRL Distribution Points' => ', FullName:, URI:http://s.ss2.us/r.crl',
+      'X509v3 Certificate Policies' => 'Policy:X509v3AnyPolicy',
+      'Start date' => 'Sep  2 00:00:00 2009 GMT',
+      'Expire date' => 'Jun 28 17:39:16 2034 GMT',
+      'RSA Public Key' => 'D50C3AC42AF94EE2F5BE19975F8E8853B11F3FCBCF9F20136D293AC80F7D3CF76B763863D93660A89B5E5C0080B22F597FF687F9254386E7691B529A90E171E3D82D0D4E6FF6C849D9B6F31A56AE2BB67414EBCFFB26E31ABA1D962E6A3B5894894756FF25A093705383DA847414C3679E04683ADF8E405A1D4A4ECF43913BE756D60070CB52EE7B7DAE3AE7BC31F945F6C260CF1359022B80CC3447DFB9DE90656D02CF2C91A6A6E7DE8518497C664EA33A6DA9B5EE342EBA0D03B833DF47EBB16B8D25D99BCE81D1454632967087DE020E494385B66C73BB64EA6141ACC9D454DF872FC722B226CC9F5954689FFCBE2A2FC4551C75406017850255398B7F05',
+      'rsa(n)' => 'D50C3AC42AF94EE2F5BE19975F8E8853B11F3FCBCF9F20136D293AC80F7D3CF76B763863D93660A89B5E5C0080B22F597FF687F9254386E7691B529A90E171E3D82D0D4E6FF6C849D9B6F31A56AE2BB67414EBCFFB26E31ABA1D962E6A3B5894894756FF25A093705383DA847414C3679E04683ADF8E405A1D4A4ECF43913BE756D60070CB52EE7B7DAE3AE7BC31F945F6C260CF1359022B80CC3447DFB9DE90656D02CF2C91A6A6E7DE8518497C664EA33A6DA9B5EE342EBA0D03B833DF47EBB16B8D25D99BCE81D1454632967087DE020E494385B66C73BB64EA6141ACC9D454DF872FC722B226CC9F5954689FFCBE2A2FC4551C75406017850255398B7F05',
+      'rsa(e)' => '10001',
+      'Signature' => '23:1d:e3:8a:57:ca:7d:e9:17:79:4c:f1:1e:55:fd:cc:53:6e:3e:47:0f:df:c6:55:f2:b2:04:36:ed:80:1f:53:c4:5d:34:28:6b:be:c7:55:fc:67:ea:cb:3f:7f:90:b2:33:cd:1b:58:10:82:02:f8:f8:2f:f5:13:60:d4:05:ce:f1:81:08:c1:dd:a7:75:97:4f:18:b9:6d:de:f7:93:91:08:ba:7e:40:2c:ed:c1:ea:bb:76:9e:33:06:77:1d:0d:08:7f:53:dd:1b:64:ab:82:27:f1:69:d5:4d:5e:ae:f4:a1:c3:75:a7:58:44:2d:f2:3c:70:98:ac:ba:69:b6:95:77:7f:0f:31:5e:2c:fc:a0:87:3a:47:69:f0:79:5f:f4:14:54:a4:95:5e:11:78:12:60:27:ce:9f:c2:77:ff:23:53:77:5d:ba:ff:ea:59:e7:db:cf:af:92:96:ef:24:9a:35:10:7a:9c:91:c6:0e:7d:99:f6:3f:19:df:f5:72:54:e1:15:a9:07:59:7b:83:bf:52:2e:46:8c:b2:00:64:76:1c:48:d3:d8:79:e8:6e:56:cc:ae:2c:03:90:d7:19:38:99:e4:ca:09:19:5b:ff:07:96:b0:a8:7f:34:49:df:56:a9:f7:b0:5f:ed:33:ed:8c:47:b7:30:03:5d:f4:03:8c:',
+      'Cert' => '-----BEGIN CERTIFICATE-----
+MIIEdTCCA12gAwIBAgIJAKcOSkw0grd/MA0GCSqGSIb3DQEBCwUAMGgxCzAJBgNV
+BAYTAlVTMSUwIwYDVQQKExxTdGFyZmllbGQgVGVjaG5vbG9naWVzLCBJbmMuMTIw
+MAYDVQQLEylTdGFyZmllbGQgQ2xhc3MgMiBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0
+eTAeFw0wOTA5MDIwMDAwMDBaFw0zNDA2MjgxNzM5MTZaMIGYMQswCQYDVQQGEwJV
+UzEQMA4GA1UECBMHQXJpem9uYTETMBEGA1UEBxMKU2NvdHRzZGFsZTElMCMGA1UE
+ChMcU3RhcmZpZWxkIFRlY2hub2xvZ2llcywgSW5jLjE7MDkGA1UEAxMyU3RhcmZp
+ZWxkIFNlcnZpY2VzIFJvb3QgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IC0gRzIwggEi
+MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDVDDrEKvlO4vW+GZdfjohTsR8/
+y8+fIBNtKTrID30892t2OGPZNmCom15cAICyL1l/9of5JUOG52kbUpqQ4XHj2C0N
+Tm/2yEnZtvMaVq4rtnQU68/7JuMauh2WLmo7WJSJR1b/JaCTcFOD2oR0FMNnngRo
+Ot+OQFodSk7PQ5E751bWAHDLUu57fa4657wx+UX2wmDPE1kCK4DMNEffud6QZW0C
+zyyRpqbn3oUYSXxmTqM6bam17jQuug0DuDPfR+uxa40l2ZvOgdFFRjKWcIfeAg5J
+Q4W2bHO7ZOphQazJ1FTfhy/HIrImzJ9ZVGif/L4qL8RVHHVAYBeFAlU5i38FAgMB
+AAGjgfAwge0wDwYDVR0TAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAYYwHQYDVR0O
+BBYEFJxfAN+qAdcwKziIorhtSpzyEZGDMB8GA1UdIwQYMBaAFL9ft9HO3R+G9FtV
+rNzXEMIOqYjnME8GCCsGAQUFBwEBBEMwQTAcBggrBgEFBQcwAYYQaHR0cDovL28u
+c3MyLnVzLzAhBggrBgEFBQcwAoYVaHR0cDovL3guc3MyLnVzL3guY2VyMCYGA1Ud
+HwQfMB0wG6AZoBeGFWh0dHA6Ly9zLnNzMi51cy9yLmNybDARBgNVHSAECjAIMAYG
+BFUdIAAwDQYJKoZIhvcNAQELBQADggEBACMd44pXyn3pF3lM8R5V/cxTbj5HD9/G
+VfKyBDbtgB9TxF00KGu+x1X8Z+rLP3+QsjPNG1gQggL4+C/1E2DUBc7xgQjB3ad1
+l08YuW3e95ORCLp+QCztweq7dp4zBncdDQh/U90bZKuCJ/Fp1U1ervShw3WnWEQt
+8jxwmKy6abaVd38PMV4s/KCHOkdp8Hlf9BRUpJVeEXgSYCfOn8J3/yNTd126/+pZ
+59vPr5KW7ySaNRB6nJHGDn2Z9j8Z3/VyVOEVqQdZe4O/Ui5GjLIAZHYcSNPYeehu
+VsyuLAOQ1xk4meTKCRlb/weWsKh/NEnfVqn3sF/tM+2MR7cwA130A4w=
+-----END CERTIFICATE-----
+',
+    ),
+  ),
+  'primary_port' => 443,
+  'local_ip' => '172.17.0.2',
+  'local_port' => 41564,
+  'http_version' => 3,
+  'protocol' => 2,
+  'ssl_verifyresult' => 0,
+  'scheme' => 'HTTPS',
+  'appconnect_time_us' => 552006,
+  'connect_time_us' => 196159,
+  'namelookup_time_us' => 5891,
+  'pretransfer_time_us' => 552611,
+  'redirect_time_us' => 0,
+  'starttransfer_time_us' => 552852,
+  'total_time_us' => 715841,
+  'request_header' => 'POST /post?a1=A1&b1=B1 HTTP/2
+Host: httpbin.org
+Accept: */*
+ZZZ-AAAAA: aaa
+ZZZ-BBBBB: bbb
+Content-Length: 23
+Content-Type: application/x-www-form-urlencoded
+
+',
+)
