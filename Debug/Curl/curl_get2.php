@@ -41,7 +41,7 @@ $body = substr($result, $header_size);
 curl_close($ch);
 
 // 画面出力
-echo "Output to ./error.log";
+echo "Output to ./error.log at curl_get2.php";
 
 // ログ出力
 error_log("RequestUrl: ".$info["url"]);

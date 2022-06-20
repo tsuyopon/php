@@ -1,7 +1,7 @@
 <?php
 /*
- * POSTリクエストのサンプルです。ログはerror.logに出力します
- * ログに出力されるサンプルは curl_post1.txt を参照してください。
+ * POSTリクエストのサンプルです(JSONをリクエストに送付します)。ログはerror.logに出力します
+ * ログに出力されるサンプルは curl_post2.txt を参照してください。
  * 
  * リクエスト先にはhttpbinを利用しています。
  */
@@ -13,21 +13,16 @@ ini_set("date.timezone", "Asia/Tokyo");
 
 // リクエスト
 $url = "https://httpbin.org/post?a1=A1&b1=B1";          // POST用のエンドポイントを指定する
-$post = [
-	'test1'=> "a",
-	'test2'=> "b",
-	'test3'=> "c",
-];
+$data = array("first_name" => "First name","last_name" => "last name","email"=>"email@gmail.com","addresses" => array ("address1" => "some address" ,"city" => "city","country" => "CA", "first_name" =>  "Mother","last_name" =>  "Lastnameson","phone" => "555-1212", "province" => "ON", "Zip" => "123 ABC" ) );
 $req_header = [
-  'ZZZ-AAAAA: aaa',
-  'ZZZ-BBBBB: bbb',
+  'Content-type: application/json',
 ];
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $req_header );
 curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
+curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1 );        // これを指定するとcurl_execでレスポンスを文字列で受け取ることができます。
 curl_setopt($ch, CURLOPT_HEADER, 1);
 curl_setopt($ch, CURLINFO_HEADER_OUT, true);         // リクエストヘッダを含める(curl_getinfoで取得すると、request_headerで取得できるようになる)
@@ -47,12 +42,12 @@ $body = substr($result, $header_size);
 curl_close($ch);
 
 // 画面出力
-echo "Output to ./error.log at curl_post1.php";
+echo "Output to ./error.log at curl_post2.php";
 
 // ログ出力
 error_log("RequestUrl: ".$info["url"]);
 error_log("RequestHeaders: ".$info["request_header"]);
-error_log("RequestBody: ".http_build_query($post));         // そのまま指定する
+error_log("RequestBody: ".json_encode($data));         // そのまま指定する
 error_log("StatusCode: ".$info["http_code"]);
 error_log("Errno:".$errno.", Errmsg if exsits:".$errmsg);
 error_log("Response(Header+Body):".$result);
