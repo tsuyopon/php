@@ -28,3 +28,4 @@
 **/vendor
 **/composer.phar
 **/error.log
+**/debug.txt
