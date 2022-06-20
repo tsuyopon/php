@@ -1,0 +1,86 @@
+リクエストURL: https://httpbin.org/get?msg=test&token=xxx <br>
+リクエストヘッダ: GET /get?msg=test&token=xxx HTTP/2
+Host: httpbin.org
+Accept: */*
+ZZZ-AAAAA: aaa
+ZZZ-BBBBB: bbb
+
+ <br>
+ステータスコード: 200 <br>
+errno(エラー以外は0): 0<br>
+error(エラー以外は未表示): <br>
+レスポンスヘッダ: HTTP/2 200 
+date: Mon, 20 Jun 2022 17:07:51 GMT
+content-type: application/json
+content-length: 333
+server: gunicorn/19.9.0
+access-control-allow-origin: *
+access-control-allow-credentials: true
+
+ <br>
+レスポンスボディ: {
+  "args": {
+    "msg": "test", 
+    "token": "xxx"
+  }, 
+  "headers": {
+    "Accept": "*/*", 
+    "Host": "httpbin.org", 
+    "X-Amzn-Trace-Id": "Root=1-62b0a967-3191ee0e3ed4dc0e7e32ae3f", 
+    "Zzz-Aaaaa": "aaa", 
+    "Zzz-Bbbbb": "bbb"
+  }, 
+  "origin": "60.101.238.212", 
+  "url": "https://httpbin.org/get?msg=test&token=xxx"
+}
+ <br>
+curl_getinfoを一括出力Array
+(
+    [url] => https://httpbin.org/get?msg=test&token=xxx
+    [content_type] => application/json
+    [http_code] => 200
+    [header_size] => 202
+    [request_size] => 102
+    [filetime] => -1
+    [ssl_verify_result] => 0
+    [redirect_count] => 0
+    [total_time] => 0.679674
+    [namelookup_time] => 0.022117
+    [connect_time] => 0.184767
+    [pretransfer_time] => 0.514348
+    [size_upload] => 0
+    [size_download] => 333
+    [speed_download] => 490
+    [speed_upload] => 0
+    [download_content_length] => 333
+    [upload_content_length] => -1
+    [starttransfer_time] => 0.67945
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 34.195.104.96
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 172.17.0.2
+    [local_port] => 54688
+    [http_version] => 3
+    [protocol] => 2
+    [ssl_verifyresult] => 0
+    [scheme] => HTTPS
+    [appconnect_time_us] => 513293
+    [connect_time_us] => 184767
+    [namelookup_time_us] => 22117
+    [pretransfer_time_us] => 514348
+    [redirect_time_us] => 0
+    [starttransfer_time_us] => 679450
+    [total_time_us] => 679674
+    [request_header] => GET /get?msg=test&token=xxx HTTP/2
+Host: httpbin.org
+Accept: */*
+ZZZ-AAAAA: aaa
+ZZZ-BBBBB: bbb
+
+
+)
