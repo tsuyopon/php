@@ -13,7 +13,7 @@ $array = array(
 echo "output to $debugtxt at log1.php";
 
 //var_exportの場合
-error_log(var_export($array, true), 3, $debugtxt);
+error_log(var_export($array, true), 3, $debugtxt);  // 第２引数の3は任意のファイルに出力という意味
 
 //print_rの場合
 error_log(print_r($array, true), 3, $debugtxt);

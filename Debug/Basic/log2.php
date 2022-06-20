@@ -22,4 +22,4 @@ $content = ob_get_contents();
 // バッファの終了
 ob_end_clean();
 
-error_log($content,3,$debugtxt);
+error_log($content, 3, $debugtxt); // 第２引数の3は任意のファイルに出力という意味
